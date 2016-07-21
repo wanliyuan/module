@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        a{font-size: 26px;margin:40px;display: block;}
+    </style>
 </head>
 <body>
 </body>
 <script>
     window.onload = function () {
-        var html = '<a href="data:text/xml;charset=utf-8,' + encodeURIComponent(text) + '" download="99">下载</a>';
+        var html = '<a href="data:text/xml;charset=utf-8,' + encodeURIComponent(text) + '" download="index">下载XML</a>';
         document.body.innerHTML = html;
     }
     var text = '<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>\n\
