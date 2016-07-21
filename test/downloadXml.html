@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    window.onload = function () {
+        var html = '<a href="data:text/xml;charset=utf-8,' + encodeURIComponent(text) + '" download="99">下载</a>';
+        document.body.innerHTML = html;
+    }
+    var text = '<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>\n\
+                <config-routing>\n\
+                <array name="Private">\n\
+                    <key name="amount">3</key>\n\
+                    <array name="info">\n\
+                        <key name="name">阿斯顿</key>\n\
+                        <key name="id">1</key>\n\
+                    </array>\n\
+                    <array name="info">\n\
+                        <key name="name">阿斯顿</key>\n\
+                        <key name="ecu_id">2</key>\n\
+                    </array>\n\
+                    <array name="info">\n\
+                        <key name="name">3we</key>\n\
+                        <key name="id">3</key>\n\
+                    </array>\n\
+            </array>\n\
+        </config_routing>';
+</script>
+</html>
