@@ -7,5 +7,3 @@ npm install
 
 And visit http://localhost:8081/index.html
 
-博客介绍：http://www.cnblogs.com/wanliyuan/p/5607201.html
-
