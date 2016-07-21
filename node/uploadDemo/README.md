@@ -6,4 +6,5 @@ npm install
 ,node server.js
 
 And visit http://localhost:8081/index.htm
+博客介绍：http://www.cnblogs.com/wanliyuan/p/5607201.html#uploadDemo
 
