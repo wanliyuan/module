@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>玩法</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/main.css?id=389" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body class="organ_wrapper">
+		<header>
+			<div class="header_vali noborderbottom">
+				<span>玩法</span>
+				<img src="img/search.png" class="searchbtn">
+			</div>
+		</header>
+        <section class="main_section main_section_Main">
+            <div class="main_banner">
+                <img src="img/example_m.png" class="bannerImg">
+            </div>
+            <div class="main_options">
+                <div class="headpic"><img src="img/icon.png"></div>
+                <div class="options_love">
+                    <img src="img/wanfa_favor_normal.png" data-src="img/favor.png" onclick="favorClick(this);">
+                    <p>0</p>
+                </div>
+                <div class="options_text">
+                    <div class="person_name"><p>翟丹尼</p></div>
+                    <p class="person_positon">香港星相命理讲师</p>
+                    <p class="infor_con">香港神秘学者带你初识八字命盘</p>
+                </div>
+                <div class="options_nav">
+                    <ul class="clear">
+                        <li>
+                            <img src="img/city.png"><span>北京</span>
+                        </li>
+                        <li>
+                            <img src="img/time.png"><span>2015.8.8</span>
+                        </li>
+                        <li>
+                            <span>¥50</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_options">
+                <div class="headpic"><img src="img/icon.png"></div>
+                <div class="options_love">
+                    <img src="img/wanfa_favor_normal.png" data-src="img/favor.png" onclick="favorClick(this);">
+                    <p>0</p>
+                </div>
+                <div class="options_text">
+                    <div class="person_name"><p>翟丹尼</p></div>
+                    <p class="person_positon">香港星相命理讲师</p>
+                    <p class="infor_con">香港神秘学者带你初识八字命盘</p>
+                </div>
+                <div class="options_nav">
+                    <ul class="clear">
+                        <li>
+                            <img src="img/city.png"><span>北京</span>
+                        </li>
+                        <li>
+                            <img src="img/time.png"><span>2015.8.8</span>
+                        </li>
+                        <li>
+                            <span>¥50</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_options">
+                <div class="headpic"><img src="img/icon.png"></div>
+                <div class="options_love">
+                    <img src="img/wanfa_favor_normal.png" data-src="img/favor.png" onclick="favorClick(this);">
+                    <p>0</p>
+                </div>
+                <div class="options_text">
+                    <div class="person_name"><p>翟丹尼</p></div>
+                    <p class="person_positon">香港星相命理讲师</p>
+                    <p class="infor_con">香港神秘学者带你初识八字命盘</p>
+                </div>
+                <div class="options_nav">
+                    <ul class="clear">
+                        <li>
+                            <img src="img/city.png"><span>北京</span>
+                        </li>
+                        <li>
+                            <img src="img/time.png"><span>2015.8.8</span>
+                        </li>
+                        <li>
+                            <span>¥50</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <nav class="navBottom">
+            <ul class="clear">
+                <li>
+                    <img src="img/recommend_nor.png" data-src="img/recommend_sel.png" data-nor-src="img/recommend_nor.png">
+                        <p>推荐</p>
+                <li>
+                    <img src="img/play_nor.png" data-src="img/play_sel.png" data-nor-src="img/play_nor.png">
+                        <p>玩法</p>
+                </li>
+                <li class="limid">
+                        <img src="img/explore_ic.png" />
+                </li>
+                <li>
+                    <img src="img/message_nor.png" data-src="img/message_sel.png" data-nor-src="img/message_nor.png">
+                        <p>消息</p>
+                </li>
+                <li>
+                    <img src="img/mine_nor.png" data-src="img/mine_sel.png" data-nor-src="img/mine_nor.png">
+                        <p>我</p>
+                </li>
+            </ul>
+        </nav>
+	</body>
+</html>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script>
+    function initimg() {
+        $(".navBottom li img").each(function () {
+            $(this).attr({ "src": $(this).attr("data-nor-src") }).parent().removeClass('active');
+        });
+    }
+    $(function () {
+        $(".navBottom li img").each(function () {
+            $(this).click(function () {
+                initimg();
+                var $this = $(this);
+                $this.attr({ "src": $(this).attr("data-src") });
+                $this.parent().addClass('active');
+            })
+        })
+    })
+
+    var favorClick = function (obj) {
+        var objTxt =parseInt($(obj).siblings().text());
+        if (!$(obj).hasClass('active')) {
+            $(obj).attr('src', $(obj).attr('data-src')).addClass('active');
+            objTxt = objTxt+1;
+            $(obj).siblings().text(objTxt);
+        } else {
+            objTxt++;
+            $(obj).siblings().text(objTxt);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

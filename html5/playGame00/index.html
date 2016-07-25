@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>新建玩法</title>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/main.css?id=389" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="bodywrapper">
+			<header>
+                <div class="header_vali header_vali_play">
+                    <img src="img/back.png" class="back">
+                    <span>新建玩法</span>
+                    <a href="#" class="reviewBtn">预览</a>
+                </div>
+			</header>
+			<section class="section_con">
+				<div class="section01">
+					<div class="sectionTitle01">
+						<p class="titleNum">-1-</p>
+						<p class="titleText">基本信息</p>
+					</div>
+					<div class="sectionConTitle01">
+						标题及封面图(还剩<span id="inputNum" data-max="50">50</span>字)
+					</div>
+					<div class="sectionConText01">
+						<div class="headlineBox">
+                            <input type="text" name="headline" class="headline" placeholder="输入标题" id="headlineTitle" /> 
+						</div>
+						<div class="uploadImg">
+							<img src="img/addcover.png" class="uploadBtn">
+						</div>
+					</div>
+					<div class="sectionConTitle01">
+						开始地点
+					</div>
+					<div class="sectionConText01">
+						<!--<div class="cityBox clear">
+							<span>所在城市</span>
+							<input type="text" name="headline" class="headline" placeholder="输入城市"/> 
+						</div>-->
+						<div class="headlineBox">
+							<input type="text" name="headline" class="headline" placeholder="输入城市"/> 
+						</div>
+						
+						<div class="txtareaBox">
+							<textarea class="address" placeholder="填写详细地址(选填)"></textarea>
+						</div>
+					</div>
+					<div class="sectionConTitle01">
+						设定可参与时间
+					</div>
+					<div class="sectionConText01">
+						<div class="timeBox clear">
+							<div class="starttimeBox">
+								<p class="timeText">开始时间</p>
+								<p class="timeNum">2015.7.21</p>
+							</div>
+							<div class="starttimeBox">
+								<p class="timeText">结束时间</p>
+								<p class="timeNum">2016.7.21</p>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="txtareaBox">
+						<textarea class="address" placeholder="填写具体时间，比如每周六15：00-17：00(选填)"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="section02">
+					<div class="sectionTitle01 mb1">
+						<p class="titleNum">-2-</p>
+						<p class="titleText">主要内容</p>
+					</div>
+					<div class="sectionConText02">
+						<a class="addMainTextBtn" href="addMainText.html">
+							<img src="img/addcontent.png">
+							<h3>玩法主要内容</h3>
+							<p>未填写</p>
+						</a>
+					</div>
+				</div>
+				<div class="section03">
+					<div class="sectionTitle01 mb1">
+						<p class="titleNum">-3-</p>
+						<p class="titleText">定价格</p>
+					</div>
+					<div class="timeBox clear playTimeBox">
+							<div class="starttimeBox">
+								<p>免费</p>
+                                <img src="img/check.png" class="timeBoxcheck" />
+							</div>
+							<div class="starttimeBox ">
+								<p><a href="playPrice.html">定价格</a></p>
+                                <img src="img/check.png" class="timeBoxcheck" />
+							</div>
+						</div>
+				</div>
+				<div class="section04">
+					<!--<div class="sectionTitle01 playText">
+						<p class="titleNum">-4-</p>
+						<p class="titleText">选填内容</p>
+						<p class="titleText">能更吸引玩客来参与哦</p>
+					</div>-->
+					<div class="sectionTitle01">
+						<p class="titleNum">-4-</p>
+						<p class="titleText">选填内容</p>
+					</div>
+					<div class="sectionConTitle01">
+						玩主说
+					</div>
+					<!--<div class="headlineBox">
+							<input type="text" name="headline" class="headline" placeholder="输入城市"/> 
+						</div>
+						-->
+                    <div class="txtareaBox txtareaBoxborder">
+                        <textarea class="address" placeholder="填写玩法亮点、能吸引更多玩客哦"></textarea>
+                    </div>
+					<nav class="navCon">
+						<ul class="clear">
+							<!--<li>
+								<div class="li_left">
+								</div>
+								<div class="li_right noText">
+									<span>玩主说(玩法亮点)</span>
+								</div>
+							</li>-->
+							<li>
+								<div class="li_left">
+									<img src="img/organize.png">
+									<!--<img src="img/amount.png">-->
+								</div>
+								<div class="li_right">
+									<span>每人限制报名数量</span>
+									<span class="nolimit">
+										不限<a href="organNum11.html"><img src="img/arrow.png"></a>
+									</span>
+								</div>
+							</li>
+							<!--<li>
+								<div class="li_left">
+									<img src="img/organize.png">
+								</div>
+								<div class="li_right">
+									<span>组织人数上限</span>
+									<span class="nolimit">
+										不限<a><img src="img/arrow.png"></a>
+									</span>
+								</div>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+				
+			</section>
+            <div class="issueBox">
+                <input type="button" class="issueBtn" value="确定发布" />
+            </div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+    $(function () {
+
+        //限制字数输入
+        var maxnum = parseInt( $("#inputNum").attr('data-max'));
+        $('#headlineTitle').bind('input propertychange', function () {
+            var resultnum = Math.ceil((maxnum*2- getByteLength($(this).val())) / 2);
+            if (resultnum>=0) {
+                 $("#inputNum").text(resultnum);
+            } else {
+                $("#inputNum").text($("#inputNum").text().substr(0, maxnum));
+                alert('您不能再输了');
+            }
+        });
+    })
+</script>

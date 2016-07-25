@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定价格</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/main.css?id=3009" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body class="organ_wrapper">
+		<header>
+            <div class="header_vali">
+                <a href="#" class="cancelBtn">取消</a>
+                <span>定价格</span>
+                <a href="#" class="reviewBtn">确定</a>
+            </div>
+		</header>
+        <section class="section_price">
+            <div class="price_con_wrapper" id="price_con_wrapper">
+                <div class="price_con" id="price_con_exam">
+                    <img src='img/del.png' class='delBtn' onclick="delModule(this)" />
+                    <div class="price_title clear bdBottom">
+                        <span>标题</span>
+                        <input type="text" placeholder="例如一日游价" />
+                    </div>
+                    <div class="price_title clear bdBottom">
+                        <span>价格</span>
+                        <input type="text" placeholder="请输入数字" />
+                    </div>
+                    <div class="price_textarea">
+                        <textarea placeholder="可以写费用包含、不包含、预订须知等"></textarea>
+                    </div>
+                </div>
+                <div id="price_con_add" class="price_con_add"></div>
+                <input type="button" class="addPriceCon" value="+ 添加其他价格" onclick="addModule();" />
+            </div>
+        </section>
+
+        
+	</body>
+    
+</html>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script>
+    function addModule() {
+        $("#price_con_exam").clone().appendTo("#price_con_add");
+    }
+    function delModule(obj) {
+        $(obj).parent().remove();
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+

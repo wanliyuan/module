@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>组织人数</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/main.css?id=3109" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body class="organ_wrapper">
+			<header>
+				<div class="header_vali">
+					<img src="img/back.png" class="back">
+					<span>每人限制报名数量</span>
+					<a href="#" class="reviewBtn">保存</a>
+				</div>
+			</header>
+			<section class="section_organ">
+				<div class='layerFirst clear'>
+					<span class='nolimit'>不限</span>
+					<img src="img/check.png" class="checkImg">
+				</div>
+				<div class='layerSecond clear'>
+					<span class='selfTitle'>自定义</span>
+					<input class='selfNumber' type='text' placeholder="请输入整数" >
+				</div>
+			</section>
+
+	</body>
+</html>
+<script src="js/jquery.js"></script>
+<script>
+    $(function () {
+        $(".layerSecond").click(function () {
+            $(".checkImg").hide();
+            $(this).find("input").focus();
+        })
+        $(".layerFirst").click(function () {
+            $(".checkImg").show();
+            $(this).find("input").blur();
+        })
+    })
+</script>

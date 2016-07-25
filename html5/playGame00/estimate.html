@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>评价玩法页面</title>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/main.css?id=389" rel="stylesheet" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<header class="header_bg">
+            <div class="header_vali header_vali_play">
+                <img src="img/back.png" class="back">
+                <span>评价</span>
+            </div>
+		</header>
+		<section class="section_evacon">
+			<div class="headpic_box headest_box">
+                <div class="bigpic"><img src="img/wanzhu_example.png"></div>
+				<p class="imgtext">潘丁浩</p>
+			</div>
+			<div class="star_box starest_box">
+				<p class="txt_01">独立酿酒师带你品鉴八种原创精酿啤酒</p>
+				<p class="txt_03">给玩主的综合评分</p>
+				<div class="starlist starestlist" id="starestlist">
+					<img src="img/Star_normal.png" data-src="img/Star_HL.png">
+					<img src="img/Star_normal.png" data-src="img/Star_HL.png">
+					<img src="img/Star_normal.png" data-src="img/Star_HL.png">
+					<img src="img/Star_normal.png" data-src="img/Star_HL.png">
+					<img src="img/Star_normal.png" data-src="img/Star_HL.png">
+				</div>
+				<div class="txtrea_est">
+					<textarea placeholder="再说点儿其他的"></textarea>
+				</div>
+				<a class="playest" href="javascript:;">发表评价</a>
+				
+			</div>
+			
+		</section>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function(){
+			$("#starestlist img").each(function(){
+				$(this).click(function(){
+					$(this).attr({'src':$(this).attr('data-src'),'data-src':$(this).attr('src')});
+				})
+			})
+		})
+	</script>
+</html>

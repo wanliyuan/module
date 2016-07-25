@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>添加主要内容</title>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   		<meta name="format-detection" content="telephone=no" />
+		<link href="css/base.css" rel="stylesheet" />
+        <!--<link href="js/swipeButton/jquery.swipeButton.css?id=389" rel="stylesheet" />-->
+		<link href="css/main.css?id=389" rel="stylesheet" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script src="js/swipeButton/jquery.swipeButton.js"></script>-->
+        <script src="js/autoTextarea.js"></script>
+	</head>
+	<body class="bodyBg">
+        <div class="bodywrapper bodyMainwrapper">
+            <header>
+                <div class="header_vali noborderbottom">
+                    <img src="img/back.png" class="back">
+                    <span>玩法主要内容</span>
+                    <a href="#" class="reviewBtn">保存</a>
+                </div>
+            </header>
+            <section class="mainText" id="swipeMeClone">
+                <div class="option_01 clear options" id="option_01">
+                    <img src="img/del.png" class="delBtn" onclick="delModule(this)" />
+                    <div class="imgwrapper"><img src="img/title_small.png" class="examimg"></div><input type="text" placeholder="请输入标题，不多于18个字" />
+                </div>
+                <div class="option_02 options" id="option_02">
+                    <img src="img/del.png" class="delBtn" onclick="delModule(this)" />
+                    <textarea id="textarea11"></textarea>
+                </div>
+                <div class="option_03 options" id="option_03">
+                    <img src="img/del.png" class="delBtn" onclick="delModule(this)" />
+                    <img src="img/exam.jpg" class="examimg" />
+                </div>
+
+            </section>
+            <section class="mainText mainTextCon" id="swipeMe"></section>
+            <footer class="mainTextFooter">
+                <ul class="clear">
+                    <li onclick="addModule('option_01')">
+                        <img src="img/title.png" />
+                        <p>标题</p>
+                    </li>
+                    <li onclick="addModule('option_02')">
+                        <img src="img/document.png" />
+                        <p>文字</p>
+                    </li>
+                    <li onclick="addModule('option_03')">
+                        <img src="img/picture.png" />
+                        <p>图片</p>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+	</body>
+</html>
+<script>
+    // 帮顶事件
+    $(document).ready(function () {
+        //$('#swipeMe .options').swipeDelete({
+        //    btnTheme: 'e',    // jqueryMobile主题e
+        //    btnLabel: '删除', // Name
+        //    btnImage: 'img/del_sm.png',
+        //    btnClass: 'aSwipeButton',
+        //    click: function (e) {
+        //        alert('别删我嘛！呜呜呜~~');
+        //    }
+        //});
+        
+        $("#textarea11").autoTextarea({
+        	maxHeight:120,//文本框是否自动撑高，默认：null，不自动撑高；如果自动撑高必须输入数值，该值作为文本框自动撑高的最大高度
+   		 })
+    });
+    
+	var delModule = function(obj){
+		$(obj).parent().remove();
+	}
+	var addModule  = function(objid) {
+	    $("#" + objid).clone().appendTo("#swipeMe").show();
+	}
+</script>

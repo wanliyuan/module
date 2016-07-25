@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	input[type="text"],input[type="button"], input[type="submit"], input[type="reset"] ,textarea{-webkit-appearance: none;}
+	
+	.headernav{width: 100%;height:5.5rem;position: fixed;top: 0;left: 0;border-bottom: 1px solid #ccc;}
+	.headerlogo{height:3.5rem;padding: 1rem 0; left: auto;top: auto;margin:auto;width: 100%;}
+	.min_logo{float: left;width:3.5rem;height:3.5rem;margin-left: .5rem;}
+	.menu{float: right;display: block;width:3.5rem;height:3.5rem;margin-right: .5rem;}
+	.headernav img{position: static;border: none;outline: none;}
+	.headernav ul.showul{/*display: block;*/}
+	.headernav ul{display:none;position: absolute;left:0 ;width: 100%;background-color:#000;opacity: 0.9;filter: alpha(opacity=90); z-index: 100;top:54px;}
+	.headernav ul li{width: 100%;text-align: left;line-height: 3rem;padding:.5rem 0 .5rem 1rem;/*border-bottom: 1px solid #878787;*/}
+	.headernav ul li a{display: block;overflow: hidden;}
+	.headernav ul li img{display:block;float: left;width:2.5rem;margin-right: 1rem;}
+	.headernav ul li span{display:block;float: left;font-size: 1.6rem;color: #fff;}
+	.tbmargin{margin-top:54px;}
+	.footer_wrapper{width: 100%;}
+	.footer{padding: 0;height: 5.2rem;background-color: #444;}
+	.footer_fr{display: none;}
+	.footer_fl{width: 100%;}
+	.footer_fl img,.footer_fl p{display: none;}
+	.imgtextwrap p{display: block;width: 100%;}
+	.imgtextwrap p span{display: block;text-align: center;line-height: 1.4rem;font-size: 1.2rem;color: #fff;}
+	
+	/*begin:首页*/
+	.tb_index{width: 90%;margin-top:2.4rem;}
+	.tb_index li{width: 50%;margin-bottom:2.4rem;}
+	.tb_index li img,.tb_demand li img{width: 40px;}
+	.item{margin-top:.3rem;font-size: 1.4rem;color: #4a4a4a;}
+	.high{margin-top:2.6rem;}
+	 #high{font-size:1.8rem;color: #4A4A4A;}
+	.tb_demand{margin: 0 auto;width:90%;margin-bottom:.5rem;margin-top: 1.5rem;}
+	.tb_demand li{width:100%;margin-bottom:2.4rem;}
+	.tb_download{width: 100%;}
+	.imgwrapper{width:50%;display: block;margin: 0 auto;}
+	.imgwrapper img{width:100%;}
+	.tb_download{width: 215px;margin: 0 auto;margin-top:2.7rem;}
+	.tb_download img{width:50px;}
+	.imgwrapper_r{margin-top: 1rem;}
+	.logo_detail1 font{font-size:1.5rem;}
+	.logo_detail2 font{font-size:1.1rem;}
+	.imgall_wrapper{margin-top: 1.6rem;}
+	.app_download_img{width:9rem;}
+	.smallperson{width: 4.2rem;}
+	.tb_expert {width: 94%;margin: 0 auto;padding-bottom:3rem;}
+	.tb_expert_con{width: 100%;}
+	.expert_fl{width: 100%;}
+	.expert_title{margin-bottom: 1.8rem;}
+	.expert_name{margin-top: 1.1rem;font-size: 1.4rem;}
+	.expert_detail{font-size: 1.2rem;}
+	.expert_branch{margin: 0 auto; width:29.7rem;margin-top: 2.4rem;}
+	.expert_fl img{width:8rem;height: 8rem;}
+	.expert_fr{width: 100%;margin-left: 0;}
+	.expert_option{margin-right:1.2rem;width:9rem;;}
+	.txtcon1{font-size:1.7rem;margin-top:2.5rem;}
+	.txtcon2{font-size:1.2rem;margin-top: .6rem;}
+	.expert_option img{width:100%;}
+	.expert_infor{padding:1.5rem 1.7rem 1.5rem 2.3rem;}
+	.imgall_wrapper_code,.app_download,.imgall_wrapper_pc{display: none;}
+	.imgall_wrapper_phone{margin-bottom: 30px; display: block;background-color: #7024d6;color: #fff;font-size: 1.4rem;width:20rem;height: 5rem;line-height: 5rem;border-radius: 3rem;}
+	a.app_down{color: #fff;display: block;}
+	/*end:首页*/	
+	
+	/*begin:供应商*/
+	.reason_title{width: 100%;}
+	.tb_reason{width: 100%;margin-top: 0;padding-bottom:2.8rem;}
+	.tb_reason li{width:94%;padding:0 3%;margin-top:2rem;}
+	.tb_reason li img{width: 4.3rem;height: 4.3rem;}
+	.reason_title.title{margin-top:2.5rem;font-size: 1.8rem;color: #4a4a4a;}
+	.text{font-size: 1.4rem;color: #4a4a4a;}
+	.text.notop{font-size: 1.3rem;color: #9b9b9b;}
+	.supplier_img{width:90%;height: auto;}
+	.register_con font{display: block;text-align: left;font-size: 1.2rem;color: #9b9b9b;margin-bottom:.6rem;}
+	.register_con .input_text{width: 100%; margin-left: 0;height:3.5rem;border: 1px solid #cecece;border-radius: 5px;}
+	.td_height{height:auto;padding-top:2rem;}
+	.td_height .title{font-size: 1.8rem;color: #4a4a4a;}
+	.td_height .text{font-size: 1.2rem;color: #9b9b9b;}
+	.register_con .text{font-size: 1.2rem;color: #9b9b9b;}
+	.register_con{margin-top:1.7rem;}
+	.register_con.notop{margin-top:0;}
+	.subBtn{border-radius:30px;width:14rem;height:4rem;margin-left: -7rem;margin-top: -2rem;font-size: 1.6rem;}
+	.fourprocess{margin-bottom: 4rem;}
+	.tb_register{width: 90%;margin: 0 auto;}
+	/*end:供应商*/
+	
+	/*begin:关于我们*/
+	.aboutwrapper{width: 100%;}
+	.imagewrapper{width: 100%;}
+	.txtwrapper{width: 88%;padding: 0 6%;border-bottom: none;}
+	.imagewrapper img.about_0{margin-top: 2.5rem;}
+	.whotitle{text-align: center;margin-top: 1rem;font-size: 1.8rem;color: #4a4a4a;}
+	.whotext{font-size: 1.2rem;color: #9b9b9b;line-height:1.8rem;}
+	.mainbody{margin-top:1.8rem;}
+	.whotext_01{padding-right:0;}
+	.whotext_02{padding-right:0;}
+	.about_1p,.about_2p{margin-top:.5rem;}
+	.martop.whotext{margin-top: 1.5rem;}
+	.imgshow{width:100%;margin-top:1.3rem;}
+	.imgshow img{width: 100%;}
+	.about_3p{margin-top: .5rem;}
+	.about_4p{margin-top: .7rem;}
+	.jobwrapper{width: 100%;text-align: center;margin-top: 2.2rem;margin-bottom:0;padding-bottom: 0;border-bottom: none;}
+	.jobwrapper .jobtitle{margin-right:0;font-size: 1.8rem;color: #4a4a4a;}
+	.jobwrapper .whotext{font-size: 1.2rem;color: #4A4A4A;}
+	.jobwrapper .linkjob{font-size: 1.2rem;}
+	.jobtitle,.jobwrapper .whotext{display:block;}
+	.jobwrapper .whotext_03{display: block;}
+	.imagejobwrapper{display: none;}
+	.jobhead.whotitle{margin-top:0;font-size: 1.4rem;color: #4a4a4a;text-align: left;}
+	.jobbody1{margin-top: 1rem;}
+	.jobbody2{margin-top:.2rem;}
+	.jobwrap{margin-top: 2.2rem;}
+	.contact_wrapper{width:88%;padding:0 6%;}
+	.contact_wrapper li{width: 100%;}
+	.jobwrap_zj.jobwrap{border-bottom: 1px solid #e5e5e5;padding-bottom: 3.8rem;}
+	.jobwrap_contactus.jobwrapper{padding-bottom: 0;}
+	.jobwrap_contactus .jobtitle{margin-top:2rem;}
+	.contactUsTitle{margin-top: 1.8rem;font-size: 1.8rem;}
+	.contactUsText{margin-top:1rem;}
+	.contactUsText p{font-size: 1.2rem;color: #4a4a4a;line-height: 1.8rem;}
+	a.hreflink,a.hreflink:visited, a.hreflink:hover{color:#4a4a4a;}
+	.job_footer{margin-top: 4rem;}
+	/*end:关于我们*/
+	
+}
+
+
+@media screen and (min-width:1200px){}
+@media only screen and (min-width: 960px) and (max-width:1199px) {}
+@media only screen and (min-width:768px) and (max-width:959px) {}
+@media only screen and (min-width:480px) and (max-width:767px) {}
+@media only screen and (min-width:320px) and (max-width:479px) {}
