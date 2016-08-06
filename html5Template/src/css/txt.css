@@ -15,7 +15,7 @@
 }
 .article_txt{
     width:100%;
-    background:url("../img/txt_bg.png") repeat-y 0 0;
+    background:url("../img/txt_bg.png") repeat 0 0;
 }
 .article_txt div{
     color:#977a75;
