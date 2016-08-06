@@ -5,7 +5,7 @@
 }
 @font-face{
     font-family:'PingFang';
-    src:url("../fonts/PingFang.ttc") format('truetype');
+    src:url("../fonts/lihei.ttf");
 }
 body{font-family:'PingFang';}
 .clear{
