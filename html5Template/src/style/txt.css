@@ -14,14 +14,14 @@
     height:0;
 }
 body{
-    font-family:"Microsoft Yahei" ;
+    font-family:"微软雅黑" ;
 }
 .article_txt{
     width:100%;
 }
 .article_txt div{
     color:#292929;
-    font-size:.55rem;
+    font-size:.6rem;
     line-height: 1.05rem;
     width:90.67%;
     margin:0 auto;
