@@ -29,7 +29,7 @@ body{font-family:'PingFang';}
     width: 100%;
     display: block;
 }
-.head_con,.more_photos_con,.sale_person_con{
+.head_con,.more_photos_con,.sale_person_con,.sale_comment_con{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -39,6 +39,10 @@ body{font-family:'PingFang';}
 .head_con{
     left:0;
     top: 1.1rem;
+}
+.sale_comment_con{
+    left:0;
+    top:0;
 }
 .more_photos_con{
     left:0;
@@ -123,4 +127,20 @@ body{font-family:'PingFang';}
     height:1.2rem;
     padding-left: 1.5rem;
     color: #977a75;
+}
+
+.sale_comment{
+    /*margin-bottom:13rem;*/
+    position: relative;
+}
+.sale_comment_con a{
+    position: absolute;
+    right:.6rem;
+    top:.5rem;
+    padding-right: 1rem;
+    font-size:.9rem;
+    color: #6aa2e8;
+    text-decoration: none;
+    cursor: pointer;
+    background: url("../img/comment_edit.png") no-repeat right center;
 }

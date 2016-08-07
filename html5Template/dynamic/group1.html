@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../src/js/mobile-util.js"></script>
+    <script src="../src/js/jquery.js"></script>
+    <link href="../src/link/bottom_menu.css" rel="stylesheet">
+    <link href="../src/link/login.css" rel="stylesheet">
+    <style>
+        .layout,.alert_comment{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <menu class="bottom_menu" id="bottom_menu">
+        <ul class="clear">
+            <li><span></span></li>
+            <li><a href="../html5/template.html#sale_comment"><span></span></a></li>
+        </ul>
+    </menu>
+    <div class="layout" id="layout"></div>
+    <section class="alert_comment clear" id="alert_comment">
+        <a href="javascript:;" class="close_btn" id="close_btn"></a>
+        <div class="alert_comment_con">
+            <form>
+                <div class="form_group">
+                    <div class="title">您的手机</div>
+                    <div class="input_group">
+                        <input type="tel" id="tel">
+                        <button>修改</button>
+                    </div>
+                </div>
+                <div class="form_group">
+                    <div class="title">验证码</div>
+                    <div class="input_group">
+                        <input type="text" id="val_code">
+                        <button>登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        $(function(){
+            var $firstLi = $('#bottom_menu li:eq(0) span'),
+                $secondLi = $('#bottom_menu li:eq(1) span'),
+                $closeBtn = $('#close_btn'),
+                $alertComment = $("#layout,#alert_comment"),
+                $bottomMenu = $("#bottom_menu");
+
+            $firstLi.bind("click",function(){
+                $alertComment.show();
+                $bottomMenu.hide();
+            })
+
+            $closeBtn.bind("click",function(){
+                $alertComment.hide();
+                $bottomMenu.show();
+            })
+
+            $firstLi.text("123.2元起");
+            $secondLi.text("234");
+            //取购物车数据
+            var getMenuDatas = function(){
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data,
+                    dataType: "JSON",
+                    success:function(data){
+
+                    },
+                    error : function() {
+
+                    }
+                });
+            }
+
+        })
+    </script>
+</body>
+</html>

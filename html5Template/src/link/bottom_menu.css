@@ -22,6 +22,7 @@ ul{
 .bottom_menu{
     background-color: #dfdfdf;
     text-align: center;
+    color: #292929;
 }
 .bottom_menu ul li{
     padding:1rem 0;
@@ -40,6 +41,10 @@ ul{
 .bottom_menu ul li:last-child{
     float: left;
     width:26%;
+}
+.bottom_menu ul li:last-child a{
+    color: #292929;
+    text-decoration: none;
 }
 .bottom_menu ul li:last-child span{
     padding-left: 1.2rem;
