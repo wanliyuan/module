@@ -318,6 +318,7 @@ hr{
     margin-bottom:20px;
 }
 .industry-case{
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 .company-friends{
@@ -386,6 +387,7 @@ hr{
 }
 .company-trends-body{
     overflow: hidden;
+    padding-top:40px;
 }
 ._2Kn1{
     display:inline-block;
