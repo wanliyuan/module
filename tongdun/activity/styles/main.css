@@ -1,4 +1,6 @@
-
+body{
+	min-width:1200px;
+}
 .header .navbar{
     margin-bottom: 0 !important;
     border:none!important;
@@ -198,7 +200,8 @@ hr{
     padding-top: 80px;
 }
 .industry-section>ul{
-    width:176px;
+    /*width:176px;*/
+    width:19%;
     border-left:2px solid #e1eeff;
     border-right:2px solid #e1eeff;
     display:inline-block;
@@ -236,7 +239,8 @@ hr{
 .industry-main{
     margin-left:48px;
     float: left;
-    width:915px;
+    /*width:915px;*/
+    width:75%;
 }
 .industry-main-top{
     padding-bottom:20px;
